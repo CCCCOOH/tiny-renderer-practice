@@ -1,8 +1,8 @@
 # tiny-renderer-practice
 
-A software renderer built from scratch, following the classic [tinyrenderer](https://github.com/ssloy/tinyrenderer) course. Implements the full graphics pipeline in C++ without any graphics API (OpenGL/Vulkan) — just drawing pixels.
+一个从零实现的软件渲染器，跟随经典教程 [tinyrenderer](https://github.com/ssloy/tinyrenderer) 学习图形学管线。纯 C++ 实现，不依赖任何图形 API（OpenGL/Vulkan），核心就是画像素。
 
-## Build
+## 构建
 
 ```bash
 mkdir build && cd build
@@ -10,19 +10,19 @@ cmake ..
 make
 ```
 
-## Run
+## 运行
 
 ```bash
 ./tinyrender
 ```
 
-Outputs `framebuffer.tga`.
+输出 `framebuffer.tga`。
 
-## Structure
+## 文件结构
 
-| File | Purpose |
-|------|---------|
-| `main.cpp` | Entry point, scene setup |
-| `tgaimage.h/cpp` | TGA image I/O |
-| `CMakeLists.txt` | CMake build config |
-| `obj/` | Wavefront .obj models |
+| 文件 | 用途 |
+|------|------|
+| `main.cpp` | 入口、场景设置 |
+| `tgaimage.h/cpp` | TGA 图片读写 |
+| `CMakeLists.txt` | CMake 构建配置 |
+| `obj/` | Wavefront .obj 模型 |
